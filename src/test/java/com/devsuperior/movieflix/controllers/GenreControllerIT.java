@@ -43,7 +43,6 @@ public class GenreControllerIT {
 
 	@Test
 	public void findAllShouldReturnUnauthorizedWhenNotValidToken() throws Exception {
-
 		ResultActions result =
 				mockMvc.perform(get("/genres")
 					.contentType(MediaType.APPLICATION_JSON));
